@@ -6,7 +6,9 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require bootstrap
+//= require foundation
 //= require rainbow
 //= require ruby
 //
+
+$(function(){ $(document).foundation(); });
