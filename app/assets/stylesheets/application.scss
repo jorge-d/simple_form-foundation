@@ -1,7 +1,8 @@
 /*
- *= require foundation
  *= require github
 */
+
+@import "foundation_and_overrides";
 
 body {
   padding-top: 60px;
@@ -34,5 +35,5 @@ body {
 }
 
 .master-container {
-  padding: 5px 10%;
+  padding: 5px 5%;
 }
