@@ -37,3 +37,14 @@ body {
 .master-container {
   padding: 5px 5%;
 }
+
+.panel h3 {
+  margin-bottom: 20px;
+}
+
+input[type="file"] {
+  margin-bottom: 0;
+}
+.hint {
+  font-size: 0.7em;
+}
