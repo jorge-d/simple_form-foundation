@@ -51,3 +51,9 @@ body {
 
 label { font-weight: bold; }
 label.boolean, .radio label, .checkbox label { font-weight: normal; }
+
+// Since foundation has no option to make inline form like bootstrap,
+// we define this property to improve how inline checkboxes/radio appear
+input[type='radio'], input[type='checkbox'] {
+  margin-right: 5px;
+}

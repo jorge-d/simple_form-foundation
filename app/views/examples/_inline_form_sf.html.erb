@@ -1,7 +1,7 @@
 <%= simple_form_for @user_inline, url: create_inline_examples_url, as: 'user_inline',
   wrapper: :inline_form,
   wrapper_mappings: {
-    boolean: :vertical_boolean,
+    boolean: :boolean_wrapper,
   } do |f| %>
   <%= f.error_notification %>
 
@@ -10,7 +10,7 @@
 
     <%= f.input :password, placeholder: 'Password' %>
 
-    <%= f.input :active, label: 'Remember me', wrapper_html: {class: 'column large-4'}, label_html: {class: 'inline'} %>
+    <%= f.input :active, label: 'Remember me', wrapper_html: {class: 'column small-4'}, label_html: {class: 'inline'} %>
   </div>
 
   <%= f.button :submit %>

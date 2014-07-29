@@ -29,8 +29,8 @@
 
   <div class="row">
     <div class="small-offset-3 small-9 columns">
-      <label>
-        <input type="checkbox"> Active
+      <label class="boolean">
+        <input type="checkbox">Active
       </label>
     </div>
   </div>
@@ -40,14 +40,16 @@
       <label class="right inline">Choices</label>
     </div>
     <div class="small-9 columns">
-      <label>
-        <input type="checkbox" name="optionsRadios" id="optionsCheckbox1" value="option1" checked>
-        Option one is this and that&mdash;be sure to include why it's great
-      </label>
-      <label>
-        <input type="checkbox" name="optionsRadios" id="optionsCheckbox2" value="option2">
-        Option two can be something else and selecting it will deselect option one
-      </label>
+      <div class="checkbox">
+        <label>
+          <input type="checkbox" name="optionsRadios" id="optionsCheckbox1" value="option1" checked>Option one is this and that&mdash;be sure to include why it's great
+        </label>
+      </div>
+      <div class="checkbox">
+        <label>
+          <input type="checkbox" name="optionsRadios" id="optionsCheckbox2" value="option2">Option two can be something else and selecting it will deselect option one
+        </label>
+      </div>
     </div>
   </div>
 
@@ -56,14 +58,16 @@
       <label class="right inline">Sex</label>
     </div>
     <div class="small-9 columns">
-      <label>
-        <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
-        Male
-      </label>
-      <label>
-        <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
-        Female
-      </label>
+      <div class="radio">
+        <label>
+          <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>Male
+        </label>
+      </div>
+      <div class="radio">
+        <label>
+          <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">Female
+        </label>
+      </div>
     </div>
   </div>
 
