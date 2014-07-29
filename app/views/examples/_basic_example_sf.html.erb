@@ -2,7 +2,7 @@
   wrapper_mappings: {
     check_boxes: :vertical_radio_and_checkboxes,
     radio_buttons: :vertical_radio_and_checkboxes,
-    file: :vertical_file_input,
+    # file: :vertical_file_input,
     boolean: :vertical_boolean
   } do |f| %>
   <%= f.error_notification %>
@@ -16,7 +16,7 @@
   <%= f.input :active %>
 
   <%= f.input :choices, as: :check_boxes,
-    collection: ["Option one is this and that—be sure to include why it's great", "Option two can be something else and selecting it will deselect option one"] %>
+    collection: [["Option one is this and that—be sure to include why it's great", 1], ["Option two can be something else", 2]], checked: 1 %>
 
   <%= f.input :sex, as: :radio_buttons,
     collection: ["Male", "Female"] %>
