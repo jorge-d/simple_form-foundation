@@ -19,5 +19,9 @@
   <%= f.input :sex, as: :radio_buttons,
     collection: ["Male", "Female"] %>
 
-  <%= f.button :submit %>
+  <div class="row">
+    <div class="column small-offset-3 small-9">
+      <%= f.button :submit %>
+    </div>
+  </div>
 <% end %>
