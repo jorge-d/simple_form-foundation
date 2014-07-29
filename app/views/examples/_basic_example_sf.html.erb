@@ -1,9 +1,8 @@
 <%= simple_form_for @user_basic, url: create_basic_examples_url, as: 'user_basic',
   wrapper_mappings: {
-    check_boxes: :vertical_radio_and_checkboxes,
-    radio_buttons: :vertical_radio_and_checkboxes,
-    # file: :vertical_file_input,
-    boolean: :boolean_wrapper
+    check_boxes: :customizable_wrapper,
+    radio_buttons: :customizable_wrapper,
+    boolean: :customizable_wrapper
   } do |f| %>
   <%= f.error_notification %>
 
@@ -16,9 +15,13 @@
   <%= f.input :active %>
 
   <%= f.input :choices, as: :check_boxes,
+    wrapper_html: {class: 'row'},
+    custom_wrapper_html: {class: 'column small-12'},
     collection: [["Option one is this and that—be sure to include why it's great", 1], ["Option two can be something else", 2]], checked: 1 %>
 
   <%= f.input :sex, as: :radio_buttons,
+    wrapper_html: {class: 'row'},
+    custom_wrapper_html: {class: 'column small-12'},
     collection: ["Male", "Female"] %>
 
   <%= f.button :submit %>

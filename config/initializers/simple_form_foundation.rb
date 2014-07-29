@@ -45,7 +45,7 @@ SimpleForm.setup do |config|
       end
 
       ba.use :error, wrap_with: { tag: :small, class: :error }
-      ba.use :hint,  wrap_with: { tag: :span, class: :hint }
+      # ba.use :hint,  wrap_with: { tag: :span, class: :hint }
     end
   end
 
@@ -61,10 +61,13 @@ SimpleForm.setup do |config|
     b.use :input
 
     b.use :error, wrap_with: { tag: :small, class: :error }
-    b.use :hint,  wrap_with: { tag: :span, class: :hint }
+    # b.use :hint,  wrap_with: { tag: :span, class: :hint }
   end
 
-  config.wrappers :boolean_wrapper, tag: 'div', error_class: :error do |b|
+  # Example of use:
+  # - wrapper_html: {class: 'row'}, custom_wrapper_html: {class: 'column small-12'}
+  # - custom_wrapper_html: {class: 'column small-3 end'}
+  config.wrappers :customizable_wrapper, tag: 'div', error_class: :error do |b|
     b.use :html5
     b.optional :readonly
 
@@ -73,21 +76,8 @@ SimpleForm.setup do |config|
     end
 
     b.use :error, wrap_with: { tag: :small, class: :error }
-    b.use :hint,  wrap_with: { tag: :span, class: :hint }
+    # b.use :hint,  wrap_with: { tag: :span, class: :hint }
   end
-
-  config.wrappers :vertical_radio_and_checkboxes, tag: 'div', class: 'row', error_class: :error do |b|
-    b.use :html5
-    b.optional :readonly
-
-    b.wrapper tag: 'div', class: 'small-12 columns' do |ba|
-      ba.use :label_input
-    end
-
-    b.use :error, wrap_with: { tag: :small, class: :error }
-    b.use :hint,  wrap_with: { tag: :span, class: :hint }
-  end
-
 
   # CSS class for buttons
   config.button_class = 'button'

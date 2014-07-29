@@ -1,7 +1,7 @@
 <%= simple_form_for @user_inline, url: create_inline_examples_url, as: 'user_inline',
   wrapper: :inline_form,
   wrapper_mappings: {
-    boolean: :boolean_wrapper,
+    boolean: :customizable_wrapper,
   } do |f| %>
   <%= f.error_notification %>
 

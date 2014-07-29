@@ -1,10 +1,10 @@
 
 <%%= simple_form_for @user_basic, url: create_basic_examples_url, as: 'user_basic',
   wrapper_mappings: {
-    check_boxes: :vertical_radio_and_checkboxes,
-    radio_buttons: :vertical_radio_and_checkboxes,
+    check_boxes: :customizable_wrapper,
+    radio_buttons: :customizable_wrapper,
     file: :vertical_file_input,
-    boolean: :boolean_wrapper
+    boolean: :customizable_wrapper
   } do |f| %>
 
   <%%= f.input :email, placeholder: 'Enter email' %>

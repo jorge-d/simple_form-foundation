@@ -7,16 +7,16 @@
 
   <%%= f.input :file, as: :file, wrapper: :vertical_file_input %>
 
-  <%%= f.input :active, wrapper: :boolean_wrapper %>
+  <%%= f.input :active, wrapper: :customizable_wrapper %>
 
   <%%= f.input :choices, as: :check_boxes,
     collection: [
       'Option one is this and that—be sure to include why it\'s great',
       'Option two can be something else and selecting it will deselect option one'],
-      wrapper: :vertical_radio_and_checkboxes %>
+      wrapper: :vertical_wrapper %>
 
   <%%= f.input :sex, as: :radio_buttons,
-    collection: ['Male', 'Female'], wrapper: :vertical_radio_and_checkboxes %>
+    collection: ['Male', 'Female'], wrapper: :vertical_wrapper %>
 
   <%%= f.button :submit %>
 <%% end %>
