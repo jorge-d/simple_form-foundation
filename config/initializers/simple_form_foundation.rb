@@ -15,6 +15,21 @@ SimpleForm.setup do |config|
     # b.use :hint,  wrap_with: { tag: :span, class: :hint }
   end
 
+  config.wrappers :inline_form, tag: 'div', class: 'column large-4', hint_class: :field_with_hint, error_class: :error do |b|
+    b.use :html5
+    b.use :placeholder
+    b.optional :maxlength
+    b.optional :pattern
+    b.optional :min_max
+    b.optional :readonly
+
+    b.use :label, class: 'hidden-for-small-up'
+    b.use :input
+
+    b.use :error, wrap_with: { tag: :small, class: :error }
+    b.use :hint,  wrap_with: { tag: :span, class: :hint }
+  end
+
   config.wrappers :vertical_boolean, tag: 'div', class: 'row', error_class: :error do |b|
     b.use :html5
     b.optional :readonly
