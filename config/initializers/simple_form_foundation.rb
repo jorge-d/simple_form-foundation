@@ -44,6 +44,10 @@ SimpleForm.setup do |config|
   # CSS class for buttons
   config.button_class = 'button'
 
+  # We don't nest boolean fields into label, thus we need these two config
+  config.item_wrapper_tag = :div
+  config.boolean_style = :inline
+
   # CSS class to add for error notification helper.
   config.error_notification_class = 'alert-box alert'
 

@@ -48,3 +48,6 @@ body {
   margin-bottom: 14px;
   font-size: 0.7em;
 }
+
+label { font-weight: bold; }
+label.boolean, .radio label, .checkbox label { font-weight: normal; }
