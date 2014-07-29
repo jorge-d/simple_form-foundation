@@ -1,5 +1,8 @@
 # Use this setup block to configure all options available in SimpleForm.
 SimpleForm.setup do |config|
+  # Don't forget to edit this file to adapt to your needs (specially
+  # all the grid-related classes)
+
   config.wrappers :vertical_foundation, class: :input, hint_class: :field_with_hint, error_class: :error do |b|
     b.use :html5
     b.use :placeholder
@@ -67,7 +70,7 @@ SimpleForm.setup do |config|
   # Example of use:
   # - wrapper_html: {class: 'row'}, custom_wrapper_html: {class: 'column small-12'}
   # - custom_wrapper_html: {class: 'column small-3 end'}
-  config.wrappers :customizable_wrapper, tag: 'div', error_class: :error do |b|
+  config.wrappers :foundation_customizable_wrapper, tag: 'div', error_class: :error do |b|
     b.use :html5
     b.optional :readonly
 

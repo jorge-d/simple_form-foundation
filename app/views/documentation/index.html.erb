@@ -4,17 +4,17 @@
 <% end %>
 
 <div class='row'>
-  <h3>How to build your Rails application with Simple Form and Bootstrap</h3>
+  <h3>How to build your Rails application with Simple Form and Foundation</h3>
 </div>
 
 <div class='row'>
-  <h4>Configuring your Rails app with Simple Form and Bootstrap</h4>
+  <h4>Configuring your Rails app with Simple Form and Foundation</h4>
   <ol>
     <li>Create your new Rails application: <code>rails new my_new_app</code></li>
     <li>Open the generated Gemfile and add the Simple Form dependency: <code>gem 'simple_form'</code></li>
     <li>Install the dependencies: <code>bundle install</code></li>
-    <li>Install the Simple Form, using the --bootstrap option: <code>rails generate simple_form:install --bootstrap</code></li>
-    <li>Now you have a new Rails application using Simple Form and configured to use Bootstrap</li>
+    <li>Install the Simple Form, using the --foundation option: <code>rails generate simple_form:install --foundation</code></li>
+    <li>Now you have a new Rails application using Simple Form and configured to use Foundation</li>
   </ol>
 </div>
 
@@ -50,11 +50,11 @@
   <p>
     Example:
     <pre>
-      <code data-language='ruby'>{ string: :string_wrapper, boolean: :customizable_wrapper }</code>
+      <code data-language='ruby'>{ string: :string_wrapper, boolean: :foundation_customizable_wrapper }</code>
     </pre>
 
     All the String inputs will now use the <code>:string_wrapper</code>, and the
-    same applies to boolean fields, which will use the <code>:customizable_wrapper</code>
+    same applies to boolean fields, which will use the <code>:foundation_customizable_wrapper</code>
     for all its inputs.
     You can see more information about wrapper_mappings
     <%= link_to 'here.', 'https://github.com/plataformatec/simple_form/blob/v3.0.2/lib/simple_form.rb#L107-L111' %>
@@ -72,6 +72,6 @@
 <div class="row">
   <p>
     Simple, right? You can see the code for the other examples
-    <%= link_to 'on GitHub.', 'https://github.com/rafaelfranca/simple_form-bootstrap' %>
+    <%= link_to 'on GitHub.', 'https://github.com/jorge-d/simple_form-foundation' %>
   </p>
 </div>
