@@ -1,8 +1,8 @@
 <%= simple_form_for @user_basic, url: create_basic_examples_url, as: 'user_basic',
   wrapper_mappings: {
-    check_boxes: :foundation_customizable_wrapper,
-    radio_buttons: :foundation_customizable_wrapper,
-    boolean: :foundation_customizable_wrapper
+    check_boxes: :customizable_wrapper,
+    radio_buttons: :customizable_wrapper,
+    boolean: :customizable_wrapper
   } do |f| %>
   <%= f.error_notification %>
 
